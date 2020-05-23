@@ -12,20 +12,24 @@
     <!--FONTAWESOME LINK-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!--TITLE-->
-    <title>Music Project</title>
+    <title>SearchBeats</title>
     <!--CSS LINK-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
 </head>
 
 <body>
+   
     
     <!--Container for grid-->
     <div class="container">
         
         <!--row for navBar-->
-        <div class="row">
+        <div class="row nav1">
+            <div class="col-sm-12 col-md-8">
+                <h1 id="title">SoundBeats</h1>
+            </div>
             
-            <div class="col-sm-12 offset-md-9 col-md-4">
+            <div class="col-sm-12 col-md-4">
                 <ul class="nav nav-pills">
                     <!--spotify-->
                      <li class="nav-item">
@@ -40,10 +44,7 @@
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">GitHub Info</a>
                     <div class="dropdown-menu">
                         <!--github links-->
-                        <a class="dropdown-item" href="https://github.com/IPv5" target="_blank">Anthony Simone</a> 
-                        
-                        <a class="dropdown-item" href="https://github.com/kaishen33" target="_blank">KaiWei Shen</a> 
-                        
+                    
                         <a class="dropdown-item" href="https://github.com/isaiahEdwards" target="_blank">Isaiah Edwards</a> 
                         
                         <div class="dropdown-divider"></div>
@@ -54,7 +55,7 @@
                 </ul>
             </div>
         </div>
-        
+    
         
         <!--Row for search/songInfo/UrbanDictionary-->
         <div class="row">
@@ -62,35 +63,38 @@
             <!--SongInfo-->
             <div class="col-sm-12 col-md-4">
                 <div id="songInfo" class="songInfoClass">
-                    <h1 id="deezerArtistName">Artist Name</h1>
-                    <h3 id="deezerArtistSongName">Song Name</h3>
+                    <h1 id="deezerArtistName"></h1>
+                    <h3 id="deezerArtistSongName"></h3>
                     <img id="songCover"></img>
                 </div>
             </div>
             
             <!--Search-->
             <div class="col-sm-12 col-md-4">
-            <!--ADDD HEREE!!!!!!!!!-->
             <form action="">
                 <input type="search" id="music-input">
                 <i class="fa fa-search" id="findMusicBtn"></i>
             </form>
-
+            <!--play and next button-->
             <div class="row">
                 <div class="col-sm-12">
                     <button type="button" class="btn buttonsG" id="play">play</button>
                     <button type="button" class="btn buttonsG" id="nextSongBtn">next</button>
+                    <audio class="please" controls="" autoplay="" name="media">
+                        <source class="please" src="" type="audio/mpeg">
+                    </audio>
                 </div>
             </div>
             </div>
+
+            <div class="col-sm-12 col-md-4">
+                <div id="urban"> 
+                    <h2 id="who"></h2>
+                    <h3 id="urbanDefinition"></h3>
+                </div>
+            </div>
         </div>  
         
-            
-         
-
-        
-                
-
         <!--row for lyrics-->
         <div class="row">
 
@@ -116,7 +120,7 @@
     
     <!--Javascript/Jquery link-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 
 
